@@ -1,0 +1,31 @@
+#animation__welcome {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#animation__welcome:nth-child(1) {
+
+    stroke-dasharray: 300px;
+    stroke-dashoffset: 0px;
+    animation: welcome-anim 4s linear, end-welcome 1s ease-in-out 5s forwards;
+    
+}
+
+@keyframes welcome-anim {
+    from {
+        stroke-dashoffset: 300;
+    }
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes end-welcome {
+    to {
+        transform: translate(-50%, -140%) rotateX(.25turn);
+    }
+}

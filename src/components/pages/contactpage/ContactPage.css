@@ -1,0 +1,39 @@
+#contact {
+    height: 100vh;
+
+    background-color: var(--darkest);
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.contact__section {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__section div {
+    width: 50%;
+
+    margin-bottom: 20px;
+
+    color: var(--middleDarkAccent);
+}
+
+.contact__section div h2 {
+    font-size: 20px;
+}
+.contact__section div p {
+    font-size:  15px;
+}

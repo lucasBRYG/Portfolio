@@ -1,0 +1,112 @@
+
+.content {
+    height: 100vh;
+    width: 100%;
+
+    background: var(--darkest);
+
+    position: absolute;
+    top: 0;
+
+    transition: 1s ease-in-out
+}
+
+#intro-1 {
+    margin: 0;
+    width: 50%;
+    height: 90px;
+
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%) rotateX(-.25turn);
+
+    animation: 
+        intro-anim 1s ease-in-out 5s forwards,
+        intro-end 1s ease-in-out 10s forwards;
+        /* intro-end .85s  forwards; */
+    animation-iteration-count: 1;
+}
+
+#intro-2 {
+    margin: 0;
+    width: 50%;
+    height: 90px;
+
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%) rotateX(-.25turn);
+
+    animation: intro-anim 1s ease-in-out 10s forwards;
+}
+    
+#intro-1 p{
+    
+    font-size: 1.8em;
+    color: #ffb6b6;
+    text-shadow: 1px 1px 1px var(--lightRed);
+}
+
+#intro-2 p{
+
+    font-size: 1.8em;
+    color: #ffb6b6;
+    text-shadow: 1px 1px 1px var(--lightRed);
+}
+
+.card-section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.go-left {
+    transform: translate(-50%, 0) rotateY(-.25turn);
+}
+
+.go-right {
+    transform: translate(50%, 0) rotateY(.25turn);
+}
+
+@keyframes intro-anim {
+    100% {
+        transform: translate(-50%, -50%) rotateX(0turn);
+    }
+}
+
+@keyframes intro-end {
+    from {
+        transform: translate(-50%, -50%) rotateX(0turn);
+    }
+    to {
+        transform: translate(-50%, -110%) rotateX(.25turn);
+    }
+}
+
+/* @keyframes content-come-in {
+    to {
+        transform: translate(0, 0) rotateY(0turn);
+    }
+}
+
+@keyframes content-to-left {
+    to {
+        transform: translate(-100%, 0) rotateY(-.25turn);
+    }
+}
+
+@keyframes content-to-right {
+    to {
+        transform: translate(-100%, 0) rotateY(-.25turn);
+    }
+} */
+

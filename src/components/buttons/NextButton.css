@@ -1,0 +1,32 @@
+.next__button__container {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    background-color: #152246d2;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 300ms ease-in-out;
+}
+
+.next__button__container:hover {
+    cursor: pointer;
+    background-color: var(--middleDarkAccent);
+    opacity: .8;
+    transform: scale(1.2);
+}
+
+#left{
+    top: 45%;
+    left: 30px;
+}
+
+#right {
+    top: 45%;
+    right: 30px;
+}

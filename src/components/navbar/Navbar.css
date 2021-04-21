@@ -1,0 +1,65 @@
+.navbar {
+    padding-top: 10px;
+    height: var(--navbarHeight);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffb6b6;
+
+    font-weight: 500;
+}
+
+.navbar-left {
+    margin-left: 15px;
+}
+
+.navbar-right {
+    margin-right: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-pages {
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar-page {
+    margin-left: 1em;
+
+    font-size: 1.6em;
+    color: var(--middleDarkAccent);
+}
+
+.navbar_icons {
+    
+    display: flex;
+    align-items: center;
+}
+.navbar-icon {
+    
+    margin-left: 25px;
+    font-size: 30px; 
+    color:#ffb6b6;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* https://meet.google.com/xex-koqu-zqz */
