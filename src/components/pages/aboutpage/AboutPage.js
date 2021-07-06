@@ -10,7 +10,7 @@ export default function AboutPage() {
             <section id = "about__me"> 
                 <h2>A little about me</h2>
                 <p>
-                    I’ve been a web developer for the last year, but I fell in love with programming way back when I picked up "C++ For Dummuies" my second year college. 
+                    I’ve been a web developer for the last year, but I fell in love with programming way back when I picked up "C++ For Dummuies" my second year of college. 
                     I’ve always had a passion for building things, and I want to make the world a better place with the things I make. 
                     Besides programming and computer science, I love music, math, engineering and exploring nature. 
                     I’ve been teaching lessons through a guitar business I started over the last year, but I’m also looking for my next professional opportunity. If you have a need for a problem solver with a penitent for science, please contact me!
