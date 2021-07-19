@@ -35,7 +35,8 @@ export default function LandingPage() {
                 </section>
                 <NextButton direction="right" onClick={rightClick} />
             </Content>
-            <Content pageState={contentState} dataSide="2" id="colaborations-section" className="card-section">
+            <Content pageState={contentState} dataSide="2" id="colaborations-section" className="card-section" title="Colaborations">
+                <h2>Colaborations</h2>
                 <NextButton direction="left" onClick={leftClick} />
                 <Projectcard
                     img={process.env.PUBLIC_URL + "/assets/images/trail-mixer.jpeg"}
@@ -55,8 +56,17 @@ export default function LandingPage() {
                 />
                 <NextButton direction="right" onClick={rightClick} />
             </Content>
-            <Content pageState={contentState} dataSide="3" id="projects-section" className="card-section">
+            <Content pageState={contentState} dataSide="3" id="projects-section" className="card-section" title="Solo Projects">
+                <h2>Solo Projects</h2>
                 <NextButton direction="left" onClick={leftClick} />
+                <Projectcard
+                    img={process.env.PUBLIC_URL + "/assets/images/AmazonHomunculus.png"}
+                    size="500px 300px"
+                    title="Amazon Homunculus"
+                    description="An amazon clone built with React.js"
+                    github="https://github.com/lucasBRYG/amazonhomunculus"
+                    link="https://homunculus-ad003.web.app/"
+                />
                 <Projectcard
                     img={process.env.PUBLIC_URL + "/assets/images/weatherDash.png"}
                     size="500px 300px"
